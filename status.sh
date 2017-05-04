@@ -1,0 +1,1 @@
+clear && git status
