@@ -1,11 +1,8 @@
 #!/bin/bash
 
-# A quick helper script for using GoBuster with discovery files
-# and then writing the output to a file for later review
-
 # Input URL / Output File
 url=$1
-out=$(echo $var | sed 's/https:\/\///;s|\/.*||')
+out=$(echo $url | sed 's/https:\/\///;s|\/.*||')
 
 # SecLists files, symlinked to /root/Web_Content
 files=/root/Web_Content/raft-large-files-lowercase.txt
