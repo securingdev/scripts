@@ -11,4 +11,5 @@ out=$2
 # Step 5: Profit!
 
 # And this is where the magic happens:
-cat $in | uniq | grep -Eo '(http|https)://[^/"]+' | uniq > $out
+#cat $in | uniq | grep -Eo '(http|https)://[^/"]+' | uniq > $out
+cat $in | grep -Eo '(http|https)://[^/"]+' | uniq > $out
