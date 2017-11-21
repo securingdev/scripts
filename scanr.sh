@@ -12,9 +12,9 @@ while read line; do
                 continue
         else
             echo "" && \
-            echo "Scanning IP: " $ip && \
+            echo "IP: " $ip && \
             echo "" && \
-            masscan -p1-65535 --rate 1000 $ip -oL $ip.txt && \
+            masscan -p1-65535 --rate 5000 $ip -oL $ip.txt && \
             cat $ip.txt >> $out && rm $ip.txt &&\
             echo "" >> $out && \
             sleep $[($RANDOM %3)]
