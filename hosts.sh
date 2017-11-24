@@ -5,5 +5,5 @@ temp=temp.$1
 out=hosts.$1
 
 dig -f $in +noall +short | tee -a $temp && \
-sort -u $temp > $out && \
+uniq -u $temp > $out && \
 rm $temp
