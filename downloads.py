@@ -12,8 +12,8 @@ import time
 pyautogui.PAUSE = 2
 pyautogui.FAILSAFE = True
 
-
 print('Press Ctrl-C to quit.')
+
 try:
     count = 367 # How many videos are you downloading?
     for i in range(0, count): 
