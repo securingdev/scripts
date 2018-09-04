@@ -15,14 +15,13 @@ pyautogui.FAILSAFE = True
 
 print('Press Ctrl-C to quit.')
 try:
-    count = 0
-    for i in range(0, 396): # How many videos are you downloading?
+    count = 367 # How many videos are you downloading?
+    for i in range(0, count): 
         time.sleep(5)
         pyautogui.click(562, 569, button='left')  # Click to Avoid Quizzes
         pyautogui.click(1378, 829, button='left') # Click on Cogwheel
         pyautogui.click(1288, 666, button='left') # Click on Download
         pyautogui.click(1266, 825, button='left') # Click on Continue
-        count+=1
-        print("Completing loop {} of 396".format(i))
+        print("Completing loop {} of {}".format(i, count))
 except KeyboardInterrupt:
     print('\nDone.')
